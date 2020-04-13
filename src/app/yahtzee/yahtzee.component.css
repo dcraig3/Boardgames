@@ -1,0 +1,27 @@
+.mainGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 45% 45%;
+    height: 100em;
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 12em 12em 12em;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    border-bottom: 5px solid #000000;
+}
+
+.lower {
+    display: grid;
+    grid-template-columns: 12em 12em 12em;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+}
+
+button {
+    margin: auto;
+}
+
+.inputDiv {
+    margin: auto;
+}

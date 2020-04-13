@@ -1,0 +1,31 @@
+<div *ngIf="nothiding">
+    <button (click)="hide()">Show</button>
+</div>
+<div *ngIf="!nothiding">
+    <button (click)="hide()">Hide</button>
+    <h2 class="header">
+        Suspects
+    </h2>
+    <div class="namedItem" *ngFor="let s of suspects; let i = index">
+        <p *ngIf="s.select" (click)="toggle(i, 's')">{{s.name}}</p>
+        <p class="crossout" *ngIf="!s.select" (click)="toggle(i, 's')">{{s.name}}</p>
+    </div>
+</div>
+<div *ngIf="!nothiding">
+    <h2 class="header">
+        Weapons
+    </h2>
+    <div class="namedItem" *ngFor="let w of weapons; let i = index">
+        <p *ngIf="w.select" (click)="toggle(i, 'w')">{{w.name}}</p>
+        <p class="crossout" *ngIf="!w.select" (click)="toggle(i, 'w')">{{w.name}}</p>
+    </div>
+</div>
+<div *ngIf="!nothiding">
+    <h2 class="header">
+        Rooms
+    </h2>
+    <div class="namedItem" *ngFor="let r of rooms; let i = index">
+        <p *ngIf="r.select" (click)="toggle(i, 'r')">{{r.name}}</p>
+        <p class="crossout" *ngIf="!r.select" (click)="toggle(i, 'r')">{{r.name}}</p>
+    </div>
+</div>

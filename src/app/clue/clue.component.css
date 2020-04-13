@@ -1,0 +1,27 @@
+.namedItem {
+    border-bottom: 2px solid #000000;
+}
+
+.namedItem p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+p:hover {
+    text-decoration: underline;
+}
+
+.crossout {
+    text-decoration: line-through
+}
+
+.crossout:hover {
+    text-decoration: line-through;
+}
+
+.header {
+    background: #02d473;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}

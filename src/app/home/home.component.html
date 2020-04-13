@@ -1,0 +1,10 @@
+<div>
+    <div class="mainGrid">
+        <div *ngFor="let g of games; let i = index" class="gridBox">
+            <div (click)="route(g.link)" style="height: 100%">
+                <h2 style="height: 20%; text-align: center;">{{g.name}}</h2>
+                <img src="../assets/{{g.image}}" style="height: 80%;">
+            </div>
+        </div>
+    </div>
+</div>

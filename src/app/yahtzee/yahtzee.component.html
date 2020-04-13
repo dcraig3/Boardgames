@@ -1,0 +1,180 @@
+<div class="mainGrid">
+    <div class="upper">
+        <div>
+            <h2>Upper section</h2>
+        </div>
+        <div>
+            <h2>How to score</h2>
+        </div>
+        <div>
+            <h2>Game</h2>
+        </div>
+        <div>
+            <h2>Aces (1)</h2>
+        </div>
+        <div>
+            <p>Count and add only aces</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="diceOne">
+        </div>
+        <div>
+            <h2>Twos (2)</h2>
+        </div>
+        <div>
+            <p>Count and add only twos</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="diceTwo">
+        </div>
+        <div>
+            <h2>Threes (3)</h2>
+        </div>
+        <div>
+            <p>Count and add only threes</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="diceThree">
+        </div>
+        <div>
+            <h2>Fours (4)</h2>
+        </div>
+        <div>
+            <p>Count and add only fours</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="diceFour">
+        </div>
+        <div>
+            <h2>Fives (5)</h2>
+        </div>
+        <div>
+            <p>Count and add only fives</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="diceFive">
+        </div>
+        <div>
+            <h2>Sixes (6)</h2>
+        </div>
+        <div>
+            <p>Count and add only sixes</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="diceSix">
+        </div>
+        <div>
+            <h2>Total Score</h2>
+        </div>
+        <div style="margin:auto">
+            <button (click)="upperCalc()">Calculate</button>
+        </div>
+        <div>
+            <h3>{{totalBeforeBonus}}</h3>
+        </div>
+        <div>
+            <h2>Bonus</h2>
+        </div>
+        <div>
+            <p>If total score is 63 or over, +35</p>
+        </div>
+        <div>
+            <h3>{{bonus}}</h3>
+        </div>
+        <div>
+            <h2>Total</h2>
+        </div>
+        <div style="margin:auto">
+
+        </div>
+        <div>
+            <h3>{{totalUpper}}</h3>
+        </div>
+    </div>
+    <div class="lower">
+        <div>
+            <h2>3 of a kind</h2>
+        </div>
+        <div>
+            <p>Add total of all dice</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="threeOfAKind">
+        </div>
+        <div>
+            <h2>4 of a kind</h2>
+        </div>
+        <div>
+            <p>Add total of all dice</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="fourOfAKind">
+        </div>
+        <div>
+            <h2>Full house</h2>
+        </div>
+        <div>
+            <p>Score 25</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="fullHouse">
+        </div>
+        <div>
+            <h2>Small straight</h2>
+            <span>sequence of 4</span>
+        </div>
+        <div>
+            <p>Score 30</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="straightSmall">
+        </div>
+        <div>
+            <h2>Large straight</h2>
+            <span>sequence of 5</span>
+        </div>
+        <div>
+            <p>Score 40</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="straightLarge">
+        </div>
+        <div>
+            <h2>YAHTZEE</h2>
+            <span>5 of a kind</span>
+        </div>
+        <div>
+            <p>Score 50</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="yahtzee">
+        </div>
+        <div>
+            <h2>Chance</h2>
+        </div>
+        <div>
+            <p>Score total of all 5 dice</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="chance">
+        </div>
+        <div>
+            <h2>YAHTZEE Bonus</h2>
+        </div>
+        <div>
+            <p>Number of bonuses (100 for each)</p>
+        </div>
+        <div class="inputDiv">
+            <input type="number" [(ngModel)]="yahtzeeBonus">
+        </div>
+        <div>
+            <h2>GRAND TOTAL</h2>
+        </div>
+        <div style="margin: auto;">
+            <button (click)="lowerCalc()">Calculate</button>
+        </div>
+        <div>
+            <h2>{{grandTotal}}</h2>
+        </div>
+    </div>
+</div>
