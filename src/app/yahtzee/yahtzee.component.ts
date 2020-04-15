@@ -60,7 +60,7 @@ export class YahtzeeComponent implements OnInit {
   }
 
   lowerCalc() {
-    this.grandTotal = this.totalBeforeBonus + this.threeOfAKind + (this.yahtzeeBonus * 100) +
+    this.grandTotal = this.totalUpper + this.threeOfAKind + (this.yahtzeeBonus * 100) +
       this.fourOfAKind + this.fullHouse + this.straightSmall + this.straightLarge + this.yahtzee + this.chance;
   }
 
